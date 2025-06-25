@@ -7,17 +7,18 @@
 
     <!-- CSS External -->
     <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
     <!-- Head Content -->
     <header class="main-header">
         <h1>Welcome to My Katik</h1>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
+        <p id="welcome-speech">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged</p>
 
         <!-- Navigation -->
         <nav class="nav-buttons">
-            <a class="btn-nav" href="">Segitiga</a>
-            <a class="btn-nav" href="">Jajar Genjang</a>
+            <a class="btn-nav" href="#" onclick="greet()">Segitiga</a>
+            <a class="btn-nav" href="#">Jajar Genjang</a>
         </nav>
     </header>
 
@@ -41,16 +42,16 @@
 
                 <div>
                     <label for="alas">Alas :</label>
-                    <input type="number" id="alas" name="alas" placeholder="Masukkan alas segitiga (a)">
+                    <input type="number" id="alas" name="alas" placeholder="Masukkan alas segitiga (a)" required>
                 </div>
 
                 <div>
                     <label for="tinggi">Tinggi :</label>
-                    <input type="number" name="tinggi" id="tinggi" placeholder="Masukkan tinggi segitiga (t)">
+                    <input type="number" name="tinggi" id="tinggi" placeholder="Masukkan tinggi segitiga (t)" required>
                 </div>
                 
                 <div>
-                    <button type="button">Hitung</button>
+                    <button type="button" id="hitungLuas()" onclick="calcLuas()">Hitung</button>
                 </div>
 
                 
@@ -72,27 +73,27 @@
                 <img src="assets/keliling-segitiga.png" alt="keliling-segitiga">
             </div>
 
-            <p>Rumus keliling Segitga : 3 * s</p>
+            <p>Rumus keliling Segitga : a + b + c</p>
 
             <form>
 
                 <div>
                     <label for="sisiA">sisi A :</label>
-                    <input type="number" id="sisiA" name="sisiA" placeholder="Masukkan sisi A segitiga (a)">
+                    <input type="number" id="sisiA" name="sisiA" placeholder="Masukkan sisi A segitiga (a)" required>
                 </div>
 
                 <div>
                     <label for="sisiB">sisi B :</label>
-                    <input type="number" id="sisiB" name="sisiB" placeholder="Masukkan sisi B segitiga (b)">
+                    <input type="number" id="sisiB" name="sisiB" placeholder="Masukkan sisi B segitiga (b)" required>
                 </div>
 
                 <div>
                     <label for="sisiC">sisi C :</label>
-                    <input type="number" id="sisiC" name="sisiC" placeholder="Masukkan sisi C segitiga (c)">
+                    <input type="number" id="sisiC" name="sisiC" placeholder="Masukkan sisi C segitiga (c)" required>
                 </div>
                 
                 <div>
-                    <button type="button">Hitung</button>
+                    <button type="button" id="hitungKeliling()" onclick="calcKeliling()">Hitung</button>
                 </div>
 
             </form>
@@ -100,12 +101,15 @@
 
      </main>
 
-     <script src="js/script.js"></script>
 
      <!-- Footer Content -->
       <footer>
-        <p>2025. All Right</p>
-        <p>Adiwenadwi</p>
+        <p>2025 Adiwenadwi. All Right Reserved</p>
+        
       </footer>
+
+      <!-- Javascript External -->
+       <script src="js/script.js"></script>
+
 </body>
 </html>
