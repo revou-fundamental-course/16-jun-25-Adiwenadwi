@@ -10,95 +10,38 @@
 
 </head>
 <body>
+
+    <!-- Alert Box -->
+    <div id="custom-alert" class="alert-box hidden">
+        <p id="alert-message"></p>
+        <button onclick="closeAlert_segitiga()">OK</button>
+    </div>
+
     <!-- Head Content -->
     <header class="main-header">
         <h1>Welcome to My Katik</h1>
         <p id="welcome-speech">Selamat datang di Aplikasi My Katik.</p>
 
         <!-- Navigation -->
+         
         <nav class="nav-buttons">
-            <a class="btn-nav" href="#" onclick="greet()">Segitiga</a>
-            <a class="btn-nav" href="#">Jajar Genjang</a>
+            <a class="btn-nav" href="segitiga.html">Segitiga</a>
+            <a class="btn-nav" href="jajargenjang.html">Jajar Genjang</a>
         </nav>
     </header>
 
     <!-- Main Content -->
      <main>
-        <!-- Section Luas -->
-         <section>
-            <header>
-                <h2>Luas Segitiga</h2>
-            </header>
+        <!-- Kata Pembuka -->
+        <section>
 
-            <div class="formula-img">
-               <img src="assets/luas-segitiga.png" alt="luas-segitiga">
-            </div>
+            <p>Selamat datang di My Katik!</p>
+            <p>Aplikasi ini membantu kamu menghitung luas dan keliling bangun datar dengan mudah dan cepat.</p>
+            <p>Cukup masukkan angka yang dibutuhkan, lalu klik tombol hitung — hasilnya langsung muncul!</p>
+            <p>Cocok untuk pelajar, guru, atau siapa saja yang ingin belajar matematika dasar secara praktis.</p>
+            <p>Yuk, mulai belajar dan berhitung dengan My Katik sekarang!</p>
 
-            <p>Rumus : alas * tinggi / 2
-            </p>
-            
-            <!-- Form Luas  -->
-            <form>
-
-                <div>
-                    <label for="alas">Alas :</label>
-                    <input type="number" id="alas" name="alas" placeholder="Masukkan alas segitiga (a)" required>
-                </div>
-
-                <div>
-                    <label for="tinggi">Tinggi :</label>
-                    <input type="number" name="tinggi" id="tinggi" placeholder="Masukkan tinggi segitiga (t)" required>
-                </div>
-                
-                <div>
-                    <button type="button" id="hitungLuas()" onclick="calcLuas()">Hitung</button>
-                </div>
-
-                
-                <div class="errorMsg" id="error-msg"></div>
-
-            </form>
-
-            
-            
-         </section>
-
-         <!-- Section Keliling -->
-         <section>
-            <header>
-                <h2>Keliling Segitiga</h2>
-            </header>
-            
-            <div class="formula-img">
-                <img src="assets/keliling-segitiga.png" alt="keliling-segitiga">
-            </div>
-
-            <p>Rumus keliling Segitga : a + b + c</p>
-
-            <!-- Form Keliling -->
-            <form>
-
-                <div>
-                    <label for="sisiA">sisi A :</label>
-                    <input type="number" id="sisiA" name="sisiA" placeholder="Masukkan sisi A segitiga (a)" required>
-                </div>
-
-                <div>
-                    <label for="sisiB">sisi B :</label>
-                    <input type="number" id="sisiB" name="sisiB" placeholder="Masukkan sisi B segitiga (b)" required>
-                </div>
-
-                <div>
-                    <label for="sisiC">sisi C :</label>
-                    <input type="number" id="sisiC" name="sisiC" placeholder="Masukkan sisi C segitiga (c)" required>
-                </div>
-                
-                <div>
-                    <button type="button" id="hitungKeliling()" onclick="calcKeliling()">Hitung</button>
-                </div>
-
-            </form>
-         </section>
+        </section>
 
      </main>
 

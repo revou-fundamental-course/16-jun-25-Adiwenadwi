@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Matematik - Adiwenadwi - Segitiga</title>
+
+    <!-- CSS External -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <!-- Alert Box -->
+    <div id="custom-alert" class="alert-box hidden">
+        <p id="alert-message"></p>
+        <button onclick="closeAlert_segitiga()">OK</button>
+    </div>
+
+    <!-- Head Content -->
+    <header class="main-header">
+        <h1>Welcome to My Katik</h1>
+        <p id="welcome-speech">Selamat datang di Aplikasi My Katik.</p>
+
+        <!-- Navigation -->
+         <nav class="nav-buttons-home">
+            <a class="btn-nav-home" href="index.html">Beranda</a>
+         </nav>
+        <nav class="nav-buttons">
+            <a class="btn-nav" href="segitiga.html">Segitiga</a>
+            <a class="btn-nav" href="jajargenjang.html">Jajar Genjang</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+     <main>
+        <!-- Section Luas -->
+         <section>
+            <header>
+                <h2>Luas Segitiga</h2>
+            </header>
+
+            <div class="formula-img">
+               <img src="assets/luas-segitiga.png" alt="luas-segitiga">
+            </div>
+
+            <p>Rumus : alas * tinggi / 2
+            </p>
+            
+            <!-- Form Luas  -->
+            <form>
+
+                <div>
+                    <label for="alas">Alas :</label>
+                    <input type="number" id="alas" name="alas" placeholder="Masukkan alas segitiga (a)" required>
+                </div>
+
+                <div>
+                    <label for="tinggi">Tinggi :</label>
+                    <input type="number" name="tinggi" id="tinggi" placeholder="Masukkan tinggi segitiga (t)" required>
+                </div>
+                
+                <div>
+                    <button type="button" id="hitungLuas" onclick="calc_luas_segitiga()">Hitung</button>
+                    <button type="button" id="reset" onclick="reset_perhitungan_segitiga()">Reset</button>
+                </div>
+
+                
+                <div class="result" id="result-luas-segitiga"></div>
+                
+
+            </form>
+
+            
+            
+         </section>
+
+         <!-- Section Keliling -->
+         <section>
+            <header>
+                <h2>Keliling Segitiga</h2>
+            </header>
+            
+            <div class="formula-img">
+                <img src="assets/keliling-segitiga.png" alt="keliling-segitiga">
+            </div>
+
+            <p>Rumus keliling Segitga : a + b + c</p>
+
+            <!-- Form Keliling -->
+            <form>
+
+                <div>
+                    <label for="sisiA">sisi A :</label>
+                    <input type="number" id="sisiA" name="sisiA" placeholder="Masukkan sisi A segitiga (a)" required>
+                </div>
+
+                <div>
+                    <label for="sisiB">sisi B :</label>
+                    <input type="number" id="sisiB" name="sisiB" placeholder="Masukkan sisi B segitiga (b)" required>
+                </div>
+
+                <div>
+                    <label for="sisiC">sisi C :</label>
+                    <input type="number" id="sisiC" name="sisiC" placeholder="Masukkan sisi C segitiga (c)" required>
+                </div>
+                
+                <div>
+                    <button type="button" id="hitungKeliling" onclick="calc_keliling_segitiga()">Hitung</button>
+                    <button type="button" id="reset" onclick="reset_perhitungan_segitiga()">Reset</button>
+                </div>
+
+                <div class="result" id="result-keliling-segitiga"></div>
+                
+            </form>
+         </section>
+
+         
+
+     </main>
+
+
+     <!-- Footer Content -->
+      <footer>
+        <p>2025 Adiwenadwi. All Right Reserved</p>
+        
+      </footer>
+
+      <!-- Javascript External -->
+       <script src="js/script.js"></script>
+
+</body>
+</html>
