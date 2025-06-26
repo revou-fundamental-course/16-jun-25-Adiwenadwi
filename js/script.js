@@ -1,10 +1,3 @@
-console.log("Javascript is working");
-function greet(){
-const welcomeSpeech = document.getElementById("welcome-speech");
-console.log(welcomeSpeech);
-welcomeSpeech.innerHTML = "Selamat Datang di Website Matematik";
-}
-
 function showAlert_segitiga(message) {
     
 document.getElementById("alert-message").textContent = message;
